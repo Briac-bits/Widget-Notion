@@ -1,0 +1,241 @@
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  
+
+    <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+
+    <link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg" color="#111">
+
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>CodePen - Untitled</title>
+
+  <link rel="stylesheet" media="screen" href="https://cpwebassets.codepen.io/assets/fullpage/fullpage-4fb206409c49db2d3c2bc2eda945abe0a7300bff27e5970af69d880a1a5600dd.css">
+  
+
+    <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+
+    <link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg" color="#111">
+
+
+
+
+
+  <title>CodePen - Untitled</title>
+
+  <style>
+    html { font-size: 15px; }
+    html, body { margin: 0; padding: 0; min-height: 100%; }
+    body { height:100%; display: flex; flex-direction: column; }
+    .referer-warning {
+      background: black;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+      padding: 0.75em;
+      color: white;
+      text-align: center;
+      font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, system-ui, Sans-Serif;
+      line-height: 1.2;
+      font-size: 1rem;
+      position: relative;
+      z-index: 2;
+    }
+    .referer-warning span { font-family: initial; }
+    .referer-warning h1 { font-size: 1.2rem; margin: 0; }
+    .referer-warning a { color: #56bcf9; }
+  </style>
+</head>
+
+<body class="">
+  
+
+  <div id="result-iframe-wrap" role="main">
+    <iframe id="result" srcdoc="<!DOCTYPE html>
+<html lang=&quot;en&quot; >
+
+<head>
+  <meta charset=&quot;UTF-8&quot;>
+  
+
+    <link rel=&quot;apple-touch-icon&quot; type=&quot;image/png&quot; href=&quot;https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png&quot; />
+
+    <meta name=&quot;apple-mobile-web-app-title&quot; content=&quot;CodePen&quot;>
+
+    <link rel=&quot;shortcut icon&quot; type=&quot;image/x-icon&quot; href=&quot;https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico&quot; />
+
+    <link rel=&quot;mask-icon&quot; type=&quot;image/x-icon&quot; href=&quot;https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg&quot; color=&quot;#111&quot; />
+
+
+
+    <script src=&quot;https://cpwebassets.codepen.io/assets/packs/js/authorizeDataCapture-1b6f618e3a8bbe95ca51.js&quot;></script>
+
+    <script src=&quot;https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js&quot;></script>
+
+
+  <title>CodePen - Untitled</title>
+
+    <link rel=&quot;canonical&quot; href=&quot;https://codepen.io/Briouche/pen/VwJxJQP&quot;>
+  
+  <link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css&quot;>
+
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:400,700'>
+  
+<style>
+.clock-day:before {
+  content: var(--timer-day);
+}
+.clock-hours:before {
+  content: var(--timer-hours);
+}
+.clock-minutes:before {
+  content: var(--timer-minutes);
+}
+.clock-seconds:before {
+  content: var(--timer-seconds);
+}
+
+body {
+  font-family: &quot;Montserrat&quot;, &quot;sans-serif&quot;;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clock-container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #080808;
+  border-radius: 10px;
+  padding: 30px 1px;
+  box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.15), 0 15px 90px 30px rgba(0, 0, 0, 0.25);
+  display: flex;
+}
+.clock-col {
+  text-align: center;
+  margin-right: 40px;
+  margin-left: 40px;
+  min-width: 90px;
+  position: relative;
+}
+.clock-col:not(:last-child):before, .clock-col:not(:last-child):after {
+  content: &quot;&quot;;
+  background-color: rgba(255, 255, 255, 0.3);
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  right: -42px;
+}
+.clock-col:not(:last-child):before {
+  top: 35%;
+}
+.clock-col:not(:last-child):after {
+  top: 50%;
+}
+.clock-timer:before {
+  color: #fff;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.clock-label {
+  color: rgba(255, 255, 255, 0.35);
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  margin-top: 10px;
+}
+
+@media (max-width: 825px) {
+  .clock-container {
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .clock-col + .clock-col {
+    margin-top: 20px;
+  }
+  .clock-col:before, .clock-col:after {
+    display: none !important;
+  }
+}
+</style>
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+</head>
+
+<body translate=&quot;no&quot;>
+  <div class=&quot;clock-container&quot;>
+  <div class=&quot;clock-col&quot;>
+    <p class=&quot;clock-day clock-timer&quot;>
+    </p>
+    <p class=&quot;clock-label&quot;>
+      Day
+    </p>
+  </div>
+  <div class=&quot;clock-col&quot;>
+    <p class=&quot;clock-hours clock-timer&quot;>
+    </p>
+    <p class=&quot;clock-label&quot;>
+      Hours
+    </p>
+  </div>
+  <div class=&quot;clock-col&quot;>
+    <p class=&quot;clock-minutes clock-timer&quot;>
+    </p>
+    <p class=&quot;clock-label&quot;>
+      Minutes
+    </p>
+  </div>
+  <div class=&quot;clock-col&quot;>
+    <p class=&quot;clock-seconds clock-timer&quot;>
+    </p>
+    <p class=&quot;clock-label&quot;>
+      Seconds
+    </p>
+  </div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.2/moment.min.js'></script>
+      <script id=&quot;rendered-js&quot; >
+document.addEventListener('DOMContentLoaded', () =>
+requestAnimationFrame(updateTime));
+
+
+function updateTime() {
+  document.documentElement.style.setProperty('--timer-day', &quot;'&quot; + moment().format(&quot;dd&quot;) + &quot;'&quot;);
+  document.documentElement.style.setProperty('--timer-hours', &quot;'&quot; + moment().format(&quot;k&quot;) + &quot;'&quot;);
+  document.documentElement.style.setProperty('--timer-minutes', &quot;'&quot; + moment().format(&quot;mm&quot;) + &quot;'&quot;);
+  document.documentElement.style.setProperty('--timer-seconds', &quot;'&quot; + moment().format(&quot;ss&quot;) + &quot;'&quot;);
+  requestAnimationFrame(updateTime);
+}
+//# sourceURL=pen.js
+    </script>
+
+  
+</body>
+
+</html>
+" sandbox="allow-downloads allow-forms allow-modals allow-pointer-lock allow-popups-to-escape-sandbox allow-popups allow-presentation allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="accelerometer *; ambient-light-sensor *; camera *; display-capture *; encrypted-media *; geolocation *; gyroscope *; microphone *; midi *; payment *; vr *; web-share *; serial *; xr-spatial-tracking *" allowtransparency="true" allowpaymentrequest="true" allowfullscreen="true" class="result-iframe">
+      </iframe>
+  </div>
+
+
+
+
+</body></html>
